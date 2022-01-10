@@ -2,7 +2,7 @@ pipeline {
 
   environment {
     PROJECT = "augmented-ward-329505"
-    APP_NAME = "gout"
+    APP_NAME = "kubernetes"
     FE_SVC_NAME = "${APP_NAME}-frontend"
     CLUSTER = "cluster-1"
     CLUSTER_ZONE = "us-central1-c"
