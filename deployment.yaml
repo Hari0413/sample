@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: gcr.io/augmented-ward-329505/kubernetes
+        image: docker pull gcr.io/augmented-ward-329505/kubernetes:null.14
         resources:
           limits:
             memory: "128Mi"
