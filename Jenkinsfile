@@ -64,6 +64,9 @@ spec:
     stage('Deploy Dev') {
       steps {
         container('kubectl') {
+          sh "gcloud container clusters get-credentials goutham --zone us-central1-c --project augmented-ward-329505"
+          sh "kubectl apply -f deployment.yaml"
+          sh "kubectl apply -f service.yaml"
           
         }
       }
